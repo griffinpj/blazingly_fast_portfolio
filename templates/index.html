@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-    <link rel="stylesheet" href="public/css/index.css">
     <link rel="stylesheet" href="public/css/buttons.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/layout.css">
+    <link rel="stylesheet" href="public/css/fonts.css">
 </head>
 <body>
     <div class="app">
@@ -12,9 +14,9 @@
             <div class="split">
                 <div class="left">
                     <a class="button blue" href="#home"> Home </a>
-                    <a class="button blue" href="#projects"> Projects </a>
-                    <a class="button blue" href="#about"> About</a>
-                    <a class="button blue" href="#resume"> Resume</a>
+                    <a class="button orange" href="#projects"> Projects </a>
+                    <a class="button green" href="#about"> About</a>
+                    <a class="button red" href="#resume"> Resume</a>
                 </div>
                 <div class="right">
                     <a class="button icon" href="{{ github }}">
@@ -34,11 +36,15 @@
             <h3>{{ page_intro }}</h3>
         </section>
         <section id="projects" class="center column">
-            <h2> Projects </h2>
+            <!-- <h2> Projects </h2>
+            <h3> Coming soon </h3> -->
+            <iframe src="https://griffinjohnson.xyz/#projects" width="100%" scrolling="no" height="1000"></iframe>
+            <a class="small-text" href="https://griffinjohnson.xyz/#projects"> iFrame from old site ... </a>
+            <!-- <img src="https://pixelpapa.com/wp-content/uploads/2018/11/11.gif"> -->
         </section>
         <section id="about" class="center column">
             <h2> About Me </h2>
-            <p class="large-text">
+            <p class="large-text narrow">
                 {{ about_me }}
             </p>
         </section>
