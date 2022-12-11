@@ -47,6 +47,24 @@ a.button.green {
     background-color: rgb(113, 196, 109);
 }
 
+a.button.orange {
+    height: max-content;
+    background: transparent;
+    background-color: #a3d9ff;
+    color: white;
+    border: 2px solid rgb(231, 149, 77);
+    background-color: rgb(231, 149, 77);
+}
+
+a.button.red {
+    height: max-content;
+    background: transparent;
+    background-color: #a3d9ff;
+    color: white;
+    border: 2px solid rgb(215, 97, 97);
+    background-color: rgb(215, 97, 97);
+}
+
 .button.blue:hover {
         background: transparent;
         color: rgb(93, 93, 223);
@@ -55,10 +73,27 @@ a.button.green {
         opacity: 0.8;
 }
 
+
+.button.orange:hover {
+        background: transparent;
+        color: rgb(231, 149, 77);
+        border: 2px solid rgb(231, 149, 77);
+        cursor: pointer;
+        opacity: 0.8;
+}
+
 .button.green:hover {
     background: transparent;
     color: rgb(113, 196, 109);
     border: 2px solid rgb(113, 196, 109);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button.red:hover {
+    background: transparent;
+    color: rgb(215, 97, 97);
+    border: 2px solid rgb(215, 97, 97);
     cursor: pointer;
     opacity: 0.8;
 }

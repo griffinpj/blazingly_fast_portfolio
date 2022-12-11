@@ -1,0 +1,42 @@
+section {
+    min-height: 200px;
+}
+
+.tall {
+    min-height: 65em;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.large-text {
+    font-size: large;
+}
+
+.column { 
+    display: flex;
+    flex-direction: column;
+}
+
+.small-text {
+    font-size: 10px;
+}
+
+.narrow {
+    max-width: 500px;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right,
+.left {
+    display: flex;
+}
