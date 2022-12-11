@@ -1,0 +1,58 @@
+<!-- TODO Wrap text in translate layer ? Maybe ? -->
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/buttons.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <!-- TODO Move these into a hashmap to be looped over ... -->
+            <div class="split">
+                <div class="left">
+                    <a class="button blue" href="#home"> Home </a>
+                    <a class="button blue" href="#projects"> Projects </a>
+                    <a class="button blue" href="#about"> About</a>
+                    <a class="button blue" href="#resume"> Resume</a>
+                </div>
+                <div class="right">
+                    <a class="button icon" href="{{ github }}">
+                        <img src="public/img/github_logo.svg" width="50">
+                    </a>
+                    <a class="button icon" href="{{ linked_in }}">
+                        <img src="public/img/linkedin_logo.svg" width="50">
+                    </a>
+                    <a class="button icon" href="{{ mail_link }}">
+                        <img src="public/img/mail_to.svg" width="50">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section id="home" class="tall center column">
+            <h1>{{ page_title }}</h1>
+            <h3>{{ page_intro }}</h3>
+        </section>
+        <section id="projects" class="center column">
+            <h2> Projects </h2>
+        </section>
+        <section id="about" class="center column">
+            <h2> About Me </h2>
+            <p class="large-text">
+                {{ about_me }}
+            </p>
+        </section>
+        <section id="resume" class="center column">
+            <h2> Resume </h2>
+            <a class="button green wide" href="{{ resume_download_link }}"> Download </a>
+        </section>
+        <div class="footer center column">
+            <a class="button blue wide" href=""> Back to Top </a>
+            <p class="small-text center column">
+                <img src="public/img/rust_crab.png" width="25">
+                {{ version_line }}
+            </p>
+        </div>
+    </div>
+</body>
+</html>
