@@ -1,4 +1,4 @@
-FROM rust:1.65
+FROM rust:latest
 COPY ./ ./
 
 # Build your program for release with nightly
