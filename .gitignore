@@ -5,3 +5,4 @@
 /static/wasm/wasm-bundle/.appveyor.yml
 LICENSE_MIT
 LICENSE_APACHE
+.rustc_info.json
