@@ -1,2 +1,5 @@
 /target
 .DS_Store
+/static/scripts/node_modules
+/static/wasm/wasm-bundle/target
+/static/build
