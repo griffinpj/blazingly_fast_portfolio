@@ -1,0 +1,1 @@
+web: ./target/release/blazingly_fast_portfolio
