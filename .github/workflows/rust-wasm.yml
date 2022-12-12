@@ -18,16 +18,14 @@ jobs:
             node-version: [18.x]
     steps:
     - uses: actions/checkout@v3
-    - name: Build
+    - name: Build Rust for Release
       run: cargo build --release
       
-    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-  
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Build
+    - name: Bundle JS & Link compiled wasm
       run: |
         cd static/scripts
         npm run build
