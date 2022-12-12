@@ -66,14 +66,13 @@ pub async fn getStarred() -> Result<JsValue, JsValue> {
 }
 
 #[wasm_bindgen]
-pub async fn getStarredRepo(repo: String) -> Result<JsValue, JsValue> {
+pub async fn getUrl(url: String) -> Result<JsValue, JsValue> {
     let mut opts = RequestInit::new();
     opts.method("GET");
     opts.mode(RequestMode::Cors);
 
-    let url = format!("https://api.github.com/users/cougargriff/starred/{}", repo);
+    let url = url;
     let request = Request::new_with_str_and_init(&url, &opts)?;
-
     request
         .headers()
         .set("Accept", "application/vnd.github.v3+json")?;
