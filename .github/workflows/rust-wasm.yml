@@ -40,7 +40,8 @@ jobs:
         cd static/scripts
         npm run build
     - name: git Actions
-  # You may pin to the exact commit or the version.
-  # uses: srt32/git-actions@e958482c32696439aff04bc931155b00e2551474
       uses: srt32/git-actions@v0.0.3
-      run: git add .; git commmit -m ":fire: Auto-Generated Bundle & WASM from Github Action"; git push
+      run: | 
+        git add .
+        git commmit -m "-- Auto-Generated Bundle & WASM from Github Action --" 
+        git push
