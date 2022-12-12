@@ -1,4 +1,5 @@
 import * as wasm from "wasm-utils";
 
-wasm.greet();
+wasm.run('repo');
+window.wasm = wasm;
 

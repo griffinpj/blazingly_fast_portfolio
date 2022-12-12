@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "wasm-pack build ../wasm/wasm-bundle/ && npm i && gulp"
   },
   "dependencies": {
 	"wasm-utils": "file:../wasm/wasm-bundle/pkg",
