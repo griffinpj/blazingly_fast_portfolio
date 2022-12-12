@@ -73,6 +73,7 @@ pub async fn getUrl(url: String) -> Result<JsValue, JsValue> {
 
     let url = url;
     let request = Request::new_with_str_and_init(&url, &opts)?;
+
     request
         .headers()
         .set("Accept", "application/vnd.github.v3+json")?;
