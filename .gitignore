@@ -2,4 +2,9 @@
 .DS_Store
 /static/scripts/node_modules
 /static/wasm/wasm-bundle/target
+/static/wasm/wasm-bundle/.gitignore
+/static/wasm/wasm-bundle/.travis.yml
+/static/wasm/wasm-bundle/.appveyor.yml
+LICENSE_MIT
+LICENSE_APACHE
 /static/build
