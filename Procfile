@@ -1,1 +1,1 @@
-web: ./target/release/blazingly_fast_portfolio
+web: rustup default nightly && ./target/release/blazingly_fast_portfolio
