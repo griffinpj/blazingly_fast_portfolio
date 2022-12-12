@@ -18,7 +18,9 @@ jobs:
             node-version: [18.x]
     steps:
     - uses: actions/checkout@v3
-    - name: Build Rust for Release
+    - name: Use nightly rust
+      run: rustup default nightly
+    - name: Build rust for Release
       run: cargo build --release
       
     - name: Use Node.js ${{ matrix.node-version }}
