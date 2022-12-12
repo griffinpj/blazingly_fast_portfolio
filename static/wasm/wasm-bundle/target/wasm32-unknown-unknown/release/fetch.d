@@ -1,1 +1,0 @@
-/home/runner/work/blazingly_fast_portfolio/blazingly_fast_portfolio/static/wasm/wasm-bundle/target/wasm32-unknown-unknown/release/fetch.wasm: /home/runner/work/blazingly_fast_portfolio/blazingly_fast_portfolio/static/wasm/wasm-bundle/src/lib.rs
