@@ -18,8 +18,16 @@ jobs:
             node-version: [18.x]
     steps:
     - uses: actions/checkout@v3
+    
     - name: Use nightly rust
       run: rustup default nightly
+      
+    - name: Install wasm-pack 
+      run: |
+        rustup target add asmjs-unknown-emscripten --toolchain nightly
+        rustup target add wasm32-unknown-emscripten --toolchain nightly
+        cargo install wasm-pack
+        
     - name: Build rust for Release
       run: cargo build --release
       
