@@ -1,1 +1,1 @@
-web: docker-compose up
+web: docker-compose build && docker-compose up
