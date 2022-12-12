@@ -3,6 +3,7 @@
 /static/wasm/wasm-bundle/.gitignore
 /static/wasm/wasm-bundle/.travis.yml
 /static/wasm/wasm-bundle/.appveyor.yml
+/static/wasm/wasm-bundle/target/release/deps
 LICENSE_MIT
 LICENSE_APACHE
 .rustc_info.json
