@@ -1,11 +1,8 @@
 name: Build
 
 on:
-  push:
-    branches: [ "production" ]
   pull_request:
-    branches: [ "production"]
-
+    branches: [ "master"]
 env:
   CARGO_TERM_COLOR: always
 
