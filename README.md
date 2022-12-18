@@ -1,4 +1,5 @@
-# blazingly_fast_portfolio
-> site go brrr ...
+# :fire: Blazingly Fast Portfolio 🔥
 
-<img src="./site_screenshot.png">
+[![Docker](https://github.com/griffinpj/blazingly_fast_portfolio/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/griffinpj/blazingly_fast_portfolio/actions/workflows/docker-publish.yml) 
+[![Build](https://github.com/griffinpj/blazingly_fast_portfolio/actions/workflows/rust-wasm.yml/badge.svg?branch=master)](https://github.com/griffinpj/blazingly_fast_portfolio/actions/workflows/rust-wasm.yml)
+<img src="./site_screenshot.png"> 

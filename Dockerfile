@@ -1,7 +1,7 @@
-FROM rust:1.65
+FROM rust:latest
+EXPOSE 8000
 COPY ./ ./
 
-# Build your program for release with nightly
 RUN rustup default nightly
 RUN cargo build --release
 
