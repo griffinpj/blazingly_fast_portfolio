@@ -19,4 +19,5 @@ iframe {
     background-image: linear-gradient(rgba(255, 255, 255, 0.341), rgb(255, 255, 255) 100%), url("/public/img/mountains_background.jpg");
     background-size: cover;
     background-position-y: 20%;
+
 }

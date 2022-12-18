@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build": "wasm-pack build ../wasm/wasm-bundle/ && npm i && gulp"
+    "build": "pnpm i && gulp"
   },
   "dependencies": {
-	"wasm-utils": "file:../wasm/wasm-bundle/pkg",
     "webpack": "^5.75.0",
     "webpack-stream": "^7.0.0"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@redux-devtools/extension": "^3.2.3",
+    "gulp": "^4.0.2",
+    "ramda": "^0.28.0",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.2"
   }
 }

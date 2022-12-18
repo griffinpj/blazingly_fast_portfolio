@@ -35,7 +35,7 @@ fn index() -> IndexTmpl<'static> {
         github: "https://github.com/griffinpj",
         mail_link: "mailto:griffinpjohnson@gmail.com",
         resume_download_link: "https://github.com/Cougargriff/ResumeLatex/raw/master/resume_curr.pdf",
-        version_line: "0.1.0"
+        version_line: "0.2.3"
     }
 }
 
