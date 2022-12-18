@@ -28,6 +28,8 @@ section {
 	align-items: center;
 	justify-content: space-evenly;
 	padding: 20px;
+
+	text-decoration: none !important
 }
 
 .icon-commits {
@@ -67,6 +69,10 @@ section {
 	border-radius: 8px;
 	padding: 20px;
 	width: 350px;
+}
+
+.project-title {
+	height: 40px;
 }
 
 .card {

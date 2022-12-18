@@ -11,9 +11,9 @@ store.subscribe(() => {
 	) {
 		const prjsHtml = currentState.projects.data.reduce((acc, prj) => 
 			acc + `
-				<a href="${prj.link}" class="card">
+				<div class="card">
 					<div class="project">
-						<p class="project-title">${prj.name || '-'}</p>
+						<a href="${prj.link}"> <h3 class="project-title">${prj.name || '-'}</h3></a>
 						<p class="project-description">${prj.description || '-'}</p>
 						<div class="project-meta">
 							<p class="project-meta-info"> ${prj.contributor_count || '-'} </p>
@@ -22,7 +22,7 @@ store.subscribe(() => {
 							<img class="icon" src="/public/img/commit.png"></img>
 						</div>
 					</div>
-				</a>
+				</div>
 			`, '<div class="projects-container">') + '</div>';
 		document.getElementById('projects').innerHTML = prjsHtml;
 	}
