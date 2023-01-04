@@ -7,6 +7,6 @@ module.exports = {
 		asyncWebAssembly: true
 	},
     optimization: {
-        minimize: false // Set to false for better debugging in FE ... (shows actual code)
+        minimize: true // Set to false for better debugging in FE ... (shows actual code)
     }
 };
