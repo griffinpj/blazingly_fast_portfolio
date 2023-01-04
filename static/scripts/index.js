@@ -1,5 +1,5 @@
 import configureStore from "./src/store/configureStore";
-import { fetchProjects } from "./src/store/actions/projectActions.js";
+import { fetchProjects } from "./src/store/actions/ProjectActions.js";
 import * as R from 'ramda';
 
 const store = configureStore({});
