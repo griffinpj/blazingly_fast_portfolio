@@ -9,7 +9,7 @@
     "build": "pnpm i && gulp"
   },
   "dependencies": {
-    "webpack": "^5.75.0",
+    "webpack": "^5.76.0",
     "webpack-stream": "^7.0.0"
   },
   "author": "",
