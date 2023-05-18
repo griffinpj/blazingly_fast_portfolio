@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     mode: 'production',
     output: {
         filename: 'index.min.js'

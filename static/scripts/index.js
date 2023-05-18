@@ -1,6 +1,8 @@
-import configureStore from "./src/store/configureStore";
+import configureStore from "./src/store/configureStore.js";
 import { fetchProjects } from "./src/store/actions/ProjectActions.js";
-import * as R from 'ramda';
+import languages from './lib/lang-colors.json';
+
+const langToColor = (lang) => languages[lang] && languages[lang].color || 'grey';
 
 const store = configureStore({});
 store.subscribe(() => {
@@ -13,8 +15,24 @@ store.subscribe(() => {
 			acc + `
 				<div class="card">
 					<div class="project">
-						<a href="${prj.link}"> <h3 class="project-title">${prj.name || '-'}</h3></a>
-						<p class="project-description">${prj.description || '-'}</p>
+                        <a style="color: black; text-decoration: none;" href="${prj.link}"> <h3 class="project-title">${prj.name || '-'}</h3></a>
+                        <div style="display: block;">
+                            <a class="prj-langs-container" style="display: inline-block;">
+                            ${
+                                prj.langs.reduce((acc, lang) => acc + `
+                                    <span 
+                                        class="prj-lang-dot"
+                                        style="background-color: ${langToColor(lang)}; height: 15px; width: 15px; border-radius: 50%; display: inline-block;"
+                                    >
+                                    </span>
+                                    <span>
+                                    ${lang}
+                                    </span>
+                                `, '')
+                            }
+                            </a>
+                        </div>
+						<p class="project-description" style="opacity: 90%; display: block; height: 30px;">${prj.description || '-'}</p>
 						<div class="project-meta">
 							<p class="project-meta-info"> ${prj.contributor_count || '-'} </p>
 							<img class="icon" src="/public/img/contributors.png"></img>
